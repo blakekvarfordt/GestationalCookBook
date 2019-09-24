@@ -9,15 +9,19 @@
 import UIKit
 
 class Recipe {
-    let title: String
+    let title: String?
+    let directions: String?
+    let prepTime: String?
+    let cookTime: String?
+    let image: UIImage?
     let ingredients: [Ingredient]
-    let directions: String
-    let image: UIImage
     
-    init(title: String, ingredients: [Ingredient] = [], directions: String, image: UIImage) {
+    init(title: String?, directions: String?, prepTime: String?, cookTime: String?, image: UIImage?, ingredients: [Ingredient] = []) {
         self.title = title
-        self.ingredients = ingredients
         self.directions = directions
+        self.prepTime = prepTime
+        self.cookTime = cookTime
         self.image = image
+        self.ingredients = ingredients
     }
 }

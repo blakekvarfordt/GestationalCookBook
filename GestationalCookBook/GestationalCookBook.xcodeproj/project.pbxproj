@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630E5FD12339B64000354ACA /* RecipeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630E5FD02339B64000354ACA /* RecipeTVCell.swift */; };
 		639613E3232EE70A000987B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639613E2232EE70A000987B4 /* AppDelegate.swift */; };
 		639613E8232EE70A000987B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639613E6232EE70A000987B4 /* Main.storyboard */; };
 		639613EA232EE70D000987B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639613E9232EE70D000987B4 /* Assets.xcassets */; };
 		639613ED232EE70D000987B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639613EB232EE70D000987B4 /* LaunchScreen.storyboard */; };
 		639613F7232EE797000987B4 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639613F6232EE797000987B4 /* Recipe.swift */; };
 		639613F9232EE7BE000987B4 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639613F8232EE7BE000987B4 /* Ingredient.swift */; };
+		639613FC232EEAAB000987B4 /* IngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639613FB232EEAAB000987B4 /* IngredientController.swift */; };
+		639613FE232EEADA000987B4 /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639613FD232EEADA000987B4 /* RecipeController.swift */; };
+		63961401232EF809000987B4 /* RecipeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63961400232EF809000987B4 /* RecipeTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		630E5FD02339B64000354ACA /* RecipeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTVCell.swift; sourceTree = "<group>"; };
 		639613DF232EE70A000987B4 /* GestationalCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestationalCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639613E2232EE70A000987B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		639613E7232EE70A000987B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		639613EE232EE70D000987B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		639613F6232EE797000987B4 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		639613F8232EE7BE000987B4 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		639613FB232EEAAB000987B4 /* IngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientController.swift; sourceTree = "<group>"; };
+		639613FD232EEADA000987B4 /* RecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeController.swift; sourceTree = "<group>"; };
+		63961400232EF809000987B4 /* RecipeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		630E5FCF2339B61300354ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				630E5FD02339B64000354ACA /* RecipeTVCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		639613D6232EE70A000987B4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +72,9 @@
 		639613E1232EE70A000987B4 /* GestationalCookBook */ = {
 			isa = PBXGroup;
 			children = (
+				630E5FCF2339B61300354ACA /* Views */,
+				639613FF232EF7E8000987B4 /* ViewControllers */,
+				639613FA232EEA95000987B4 /* ModelController */,
 				639613F5232EE770000987B4 /* Models */,
 				639613F4232EE755000987B4 /* Resources */,
 				639613E6232EE70A000987B4 /* Main.storyboard */,
@@ -81,6 +100,23 @@
 				639613F8232EE7BE000987B4 /* Ingredient.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		639613FA232EEA95000987B4 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				639613FD232EEADA000987B4 /* RecipeController.swift */,
+				639613FB232EEAAB000987B4 /* IngredientController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		639613FF232EF7E8000987B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63961400232EF809000987B4 /* RecipeTVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +192,11 @@
 			files = (
 				639613E3232EE70A000987B4 /* AppDelegate.swift in Sources */,
 				639613F7232EE797000987B4 /* Recipe.swift in Sources */,
+				639613FC232EEAAB000987B4 /* IngredientController.swift in Sources */,
+				639613FE232EEADA000987B4 /* RecipeController.swift in Sources */,
 				639613F9232EE7BE000987B4 /* Ingredient.swift in Sources */,
+				63961401232EF809000987B4 /* RecipeTVC.swift in Sources */,
+				630E5FD12339B64000354ACA /* RecipeTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
