@@ -19,13 +19,16 @@ class RecipeTVC: UITableViewController {
         return RecipeController.shared.recipes.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeCell", for: indexPath) as? RecipeTVCell else { return UITableViewCell() }
 
         let recipe = RecipeController.shared.recipes[indexPath.row]
         
-        cell.textLabel?.text = recipe.title
+        cell.recipe = recipe
 
         return cell
     }
@@ -33,7 +36,7 @@ class RecipeTVC: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ToIngredientTVC" {
-            guard let index = tableView.indexPathForSelectedRow, let destination = segue.destination as? IngredientTVC else { return }
+            guard let index = tableView.indexPathForSelectedRow, let destination = segue.destination as? RecipeVC else { return }
             let recipe = RecipeController.shared.recipes[index.row]
             destination.recipe = recipe
         }

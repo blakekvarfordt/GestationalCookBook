@@ -24,6 +24,7 @@ class RecipeTVCell: UITableViewCell {
         guard let recipe = recipe else { return }
         recipeImageView.image = recipe.image
         recipeTitleLabel.text = recipe.title
+        
     }
 
 }
