@@ -38,6 +38,7 @@ class IngredientsContainer: UIViewController, UITableViewDataSource, UITableView
         
         let ingredient = ingredients[indexPath.row]
         cell.textLabel?.text = ingredient.text
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
 
         return cell
     }
