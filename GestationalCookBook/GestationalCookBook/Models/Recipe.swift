@@ -14,9 +14,9 @@ class Recipe {
     let prepTime: String?
     let cookTime: String?
     let image: UIImage?
-    let ingredients: [Ingredient]
+    let ingredients: [Ingredient]?
     
-    init(title: String?, directions: String?, prepTime: String?, cookTime: String?, image: UIImage?, ingredients: [Ingredient] = []) {
+    init(title: String?, directions: String?, prepTime: String?, cookTime: String?, image: UIImage?, ingredients: [Ingredient]?) {
         self.title = title
         self.directions = directions
         self.prepTime = prepTime

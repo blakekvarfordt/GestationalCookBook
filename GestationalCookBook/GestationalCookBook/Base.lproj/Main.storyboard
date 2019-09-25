@@ -155,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="xtO-Ci-MAh">
+                            <tableViewSection headerTitle="Ingredients" id="xtO-Ci-MAh">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="316" id="470-AY-J6B">
                                         <rect key="frame" x="0.0" y="28" width="414" height="316"/>
@@ -181,9 +181,9 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-2" id="JLo-jJ-SBV">
+                            <tableViewSection headerTitle="Directions" id="JLo-jJ-SBV">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="388" id="5K6-Sf-gVz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="388" id="5K6-Sf-gVz">
                                         <rect key="frame" x="0.0" y="372" width="414" height="388"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5K6-Sf-gVz" id="1J2-KI-4KL">
@@ -219,7 +219,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNX-FL-obg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234.7826086956525" y="168.75"/>
+            <point key="canvasLocation" x="2220" y="169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4gf-iz-H4F">

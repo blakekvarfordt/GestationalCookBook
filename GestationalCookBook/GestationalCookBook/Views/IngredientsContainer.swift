@@ -26,8 +26,8 @@ class IngredientsContainer: UIViewController, UITableViewDataSource, UITableView
 
     // MARK: - Table view data source
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return dataSource?.recipe?.ingredients.count ?? 0
+        guard let ingredients = dataSource?.recipe?.ingredients else { return 0}
+        return ingredients.count
     }
 
     
