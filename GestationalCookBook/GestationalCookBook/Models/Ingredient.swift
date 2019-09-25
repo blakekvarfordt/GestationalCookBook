@@ -10,10 +10,8 @@ import Foundation
 
 class Ingredient {
     let text: String?
-    let amount: String?
     
-    init(text: String?, amount: String?) {
+    init(text: String?) {
         self.text = text
-        self.amount = amount
     }
 }

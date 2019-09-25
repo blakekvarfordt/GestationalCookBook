@@ -32,7 +32,10 @@ class RecipeVC: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        if segue.identifier == "toIngredientsDIrections" {
+            guard let recipe = recipe, let destination = segue.destination as? IngredientsDirectionsTVC else { return }
+            destination.recipe = recipe
+        }
     }
     
 

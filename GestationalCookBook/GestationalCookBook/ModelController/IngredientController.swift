@@ -15,10 +15,10 @@ class IngredientController {
     var ingredients = [Ingredient]()
     
     init() {
-        let food1 = Ingredient(text: "Food1", amount: "2 cups")
-        let food2 = Ingredient(text: "Food2", amount: "3 tsp")
+        let yakisobaChicken1 = Ingredient(text: "½ teaspoon sesame oil")
+        let yakisobaChicken2 = Ingredient(text: "1 tablespoon canola oil")
         
-        let ingredients = [food1, food2]
+        let ingredients = [yakisobaChicken1, yakisobaChicken2]
         
         self.ingredients = ingredients
     }
